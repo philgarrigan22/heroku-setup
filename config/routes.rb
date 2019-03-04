@@ -12,12 +12,14 @@ Rails.application.routes.draw do
 
   # Books resource
   get '/books' => 'books#index'
+  post '/books' => 'books#create'
 
   # Patients resource
   get '/patients' => 'patients#index'
   get '/patients/:id' => 'patients#show'
+  post '/patients' => 'patients#create'
 
-  # Patients resource
+  # ingredients resource
   get '/ingredients' => 'ingredients#index'
   get '/ingredients/:id' => 'ingredients#show'
 end
