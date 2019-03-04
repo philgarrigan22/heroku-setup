@@ -11,8 +11,9 @@ Rails.application.routes.draw do
   patch '/change-password' => 'users#changepw'
 
   # Books resource
-  get '/books' => 'books#index'
-  post '/books' => 'books#create'
+  # get '/books' => 'books#index'
+  # post '/books' => 'books#create'
+  resources :books, except: %i[new edit]
 
   # Patients resource
   get '/patients' => 'patients#index'
