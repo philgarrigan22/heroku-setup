@@ -19,4 +19,5 @@ Rails.application.routes.draw do
 
   # Patients resource
   get '/ingredients' => 'ingredients#index'
+  get '/ingredients/:id' => 'ingredients#show'
 end
