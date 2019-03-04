@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get '/patients' => 'patients#index'
   get '/patients/:id' => 'patients#show'
   post '/patients' => 'patients#create'
+  patch '/patients/:id' => 'patients#update'
 
   # ingredients resource
   get '/ingredients' => 'ingredients#index'
