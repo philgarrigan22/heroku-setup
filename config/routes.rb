@@ -31,4 +31,7 @@ Rails.application.routes.draw do
   get '/ingredients/:id' => 'ingredients#show'
   post '/ingredients' => 'ingredients#create'
   patch '/ingredients/:id' => 'ingredients#update'
+
+  # Recipes resource
+  resources :recipes, except: %i[new edit]
 end
