@@ -16,10 +16,13 @@ Rails.application.routes.draw do
   resources :books, except: %i[new edit]
 
   # Patients resource
-  get '/patients' => 'patients#index'
-  get '/patients/:id' => 'patients#show'
-  post '/patients' => 'patients#create'
-  patch '/patients/:id' => 'patients#update'
+  # get '/patients' => 'patients#index'
+  # get '/patients/:id' => 'patients#show'
+  # post '/patients' => 'patients#create'
+  # patch '/patients/:id' => 'patients#update'
+  # delete '/patients/:id' => 'patients#destroy'
+  resources :patients, except: %i[new edit]
+
 
   # ingredients resource
   get '/ingredients' => 'ingredients#index'
