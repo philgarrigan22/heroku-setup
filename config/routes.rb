@@ -23,6 +23,8 @@ Rails.application.routes.draw do
   # delete '/patients/:id' => 'patients#destroy'
   resources :patients, except: %i[new edit]
 
+  # Patients resource
+  resources :doctors, except: %i[new edit]
 
   # ingredients resource
   get '/ingredients' => 'ingredients#index'
