@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   # post '/books' => 'books#create'
   resources :books, except: %i[new edit]
 
+  # appointments resource
+  resources :appointments, except: %i[new edit]
+
   # Patients resource
   # get '/patients' => 'patients#index'
   # get '/patients/:id' => 'patients#show'
