@@ -37,4 +37,7 @@ Rails.application.routes.draw do
 
   # Recipes resource
   resources :recipes, except: %i[new edit]
+
+  # Meals resource
+  resources :meals, except: %i[new edit]
 end
